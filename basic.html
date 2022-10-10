@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+        body{
+            font-family:sans-serif;
+            font-weight:600;
+            background-color:black;
+        }
+      .hello{
+        font-size: 3rem;
+        text-shadow: 0 0 5px rgb(252, 14, 14),3px 5px 5px rgb(201, 38, 230);
+        font-weight:bold;
+        text-align: center;
+      }
+      header{
+        height: 30%;
+        border-bottom: 3px solid white;
+        position: relative;
+        /* z-index: -99; */
+      }
+      *{
+        /* margin: 0;padding: 0; */
+      }
+      .again{
+        /* position:absolute; */
+        /* top: 4%; */
+        height: 3rem;
+        width: 6rem;
+        background:linear-gradient(rgb(255, 0, 170),rgb(149, 0, 255));
+        border-radius: 6px;
+        font-weight:600;
+        font-size: 20px;
+        color: white;
+        text-shadow: 0 0 15px white;
+        
+        
+      }
+      .between{
+        color: white;
+        position: absolute;
+        /* left: 80%; */
+        right: 0px;
+        top: -10%;
+        font-size: 30px;
+        /* color:blue; */
+      }
+      .numbershower{
+        height: 8rem;
+        width: 10rem;
+        position:relative;
+        background-color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,50%);
+        background-color: rgb(255, 255, 255);
+        z-index: 2323;
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.4rem;
+        border-radius: 5px;
+      }
+      main{
+        /* top0%; */
+        margin-top: 120px;
+        position: relative;
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+      }
+      .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      }
+      #input{
+        /* border: 2px solid; */
+        border-radius: 5px;
+        background-color: transparent;
+        color: white;
+        /* display: flex; */
+        /* justify-content: center;
+        align-items: center; */
+        padding: 10px;
+        font-size: 30px;
+        height: 4rem;
+        width: 9rem;
+        /* margin-bottom: 50px; */
+      }
+      .hello1{
+      text-shadow: 0 0 15px rgb(63, 255, 63),0 -2px 5px rgb(63, 255, 63),0 6px 5px rgb(63, 255, 63);
+      /* color: red; */
+      /* color: wheat; */
+      /* color: transparent; */
+      color: black;
+      font-size: 200%;
+      }
+      .score{
+        /* height: 3px; */
+        font-size: 20px;
+
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="again">Again</button>
+      <h1 class="hello">GUESS THE NUMBER....</h1>
+      <p class="between">(0 to 1000)</p>
+      <div class="numbershower">?</div>
+    </header>
+    <main>
+       
+        <section class="right">
+            <input type="number" name="" id="input" style="margin:20px ;">
+            <!-- <p></p> -->
+            <button id="check" class="again" >check</button>
+        </section>
+        <section class="left">
+            <h1 class="hello1">start guessing</h1>
+            <p class="score">Score <span id="score" style="color:rgb(27, 43, 220)">0</span></p>
+            <p class="score">Higest <span id="highest" style="color:rgb(220, 27, 172);">30</span></p>
+        </section>
+    </main>
+</body>
+<script src="basic.js"> </script>
+</html>
